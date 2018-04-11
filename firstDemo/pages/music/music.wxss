@@ -1,0 +1,10 @@
+/* pages/music/music.wxss */
+.heart {
+  width:220px;
+  height:220px;
+  background: url("http://owk4rfh2g.bkt.clouddn.com/heart2.png");
+  background-size:100% 100%;
+  line-height: 220px;
+  margin-top: -50px;
+  margin-bottom: 50px;
+}

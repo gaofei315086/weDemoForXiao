@@ -1,0 +1,42 @@
+<!--pages/album/album.wxml-->
+<view class="album-box" style='width:100%;height:{{screenH}}px'>
+  <view style='width:15%' class="album-box-side">
+    <view class="album-box-side-item">
+      <image class="album-image" src='http://owk4rfh2g.bkt.clouddn.com/qsuolong.png'></image>
+    </view>
+    <view class="album-box-side-item">
+      <image class="album-image" src='http://owk4rfh2g.bkt.clouddn.com/qshanzhi.png'></image>
+    </view>
+    <view class="album-box-side-item">
+      <image class="album-image" src='http://owk4rfh2g.bkt.clouddn.com/qxiangkesi.png'></image>
+    </view>
+  </view>
+  <view class="pic-box">
+    <swiper indicator-dots="{{indicatorDots}}" style="width:280px;height:500px" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+        <swiper-item style="text-align:center">
+          <image src="{{item}}" class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view style='width:15%' class="album-box-side">
+    <view class="album-box-side-item">
+      <image class="album-image" src='http://owk4rfh2g.bkt.clouddn.com/qlufei2.png'></image>
+    </view>
+    <view class="album-box-side-item">
+      <image class="album-image" src='http://owk4rfh2g.bkt.clouddn.com/qbuluke.png'></image>
+    </view>
+    <view class="album-box-side-item">
+      <image class="album-image" src='http://owk4rfh2g.bkt.clouddn.com/qaisi.png'></image>
+    </view>
+  </view>
+</view>
+
+
+
+
+<!-- <button bindtap="changeIndicatorDots"> indicator-dots </button>
+<button bindtap="changeAutoplay"> autoplay </button>
+<slider bindchange="intervalChange" show-value min="500" max="2000"/> interval
+<slider bindchange="durationChange" show-value min="1000" max="10000"/> duration -->

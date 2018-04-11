@@ -1,0 +1,9 @@
+<!--pages/music/music.wxml-->
+<view class="container">
+  <view class="heart"> 
+  </view>
+  <view>
+    <audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls loop></audio>
+  </view>
+</view>
+
